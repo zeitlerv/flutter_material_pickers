@@ -34,4 +34,4 @@ const double kDialogMargin = 30.0;
 
 // Typedefs
 typedef Transformer<T> = String? Function(T item);
-typedef Iconizer<T> = Icon? Function(T item);
+typedef Iconizer<T> = Widget? Function(T item);

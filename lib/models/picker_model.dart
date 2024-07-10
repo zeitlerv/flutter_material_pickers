@@ -11,7 +11,7 @@ class PickerModel {
   final Object? code;
 
   /// An optional icon that will show to the left of the picker item
-  final Icon? icon;
+  final Widget? icon;
 
   @override
   String toString() => name;

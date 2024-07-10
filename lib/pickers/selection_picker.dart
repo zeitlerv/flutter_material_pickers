@@ -56,9 +56,7 @@ class SelectionPickerState<T> extends State<SelectionPicker<T>> {
             Color? itemColor = (isSelected)
                 ? theme.colorScheme.secondary
                 : theme.textTheme.bodyMedium?.color;
-            Icon? icon = widget.iconizer?.call(item);
-            if (icon != null && icon.color == null)
-              icon = Icon(icon.icon, color: itemColor);
+            Widget? icon = widget.iconizer?.call(item);
 
             return ListTile(
               leading: icon,
