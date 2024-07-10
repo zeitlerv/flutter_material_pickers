@@ -31,6 +31,9 @@ Future<T?> showMaterialSelectionPicker<T>({
   /// The button text color (overrides theme)
   Color? buttonTextColor,
 
+  /// The barrier color
+  Color? barrierColor,
+
   /// Text to display in the confirm button
   String? confirmText,
 
@@ -65,6 +68,7 @@ Future<T?> showMaterialSelectionPicker<T>({
   return showDialog<T>(
     context: context,
     barrierDismissible: cancellable,
+    barrierColor: barrierColor,
     builder: (BuildContext context) {
       return SelectionPickerDialog<T>(
         items: items,
